@@ -110,6 +110,8 @@ public class RingBuffer<Item> implements Iterable<Item> {
 
 	private class RingBufferIterator implements Iterator<Item> {
 		private int i = 0;
+		private boolean isFirstIterate = true;
+		private int nextFirst = first;
 		
 		/** @inheritDoc */
 		public boolean hasNext() {
@@ -126,7 +128,19 @@ public class RingBuffer<Item> implements Iterable<Item> {
 		public Item next() {
 			if (!hasNext())
 				throw new NoSuchElementException();
-			return a[i++];
+
+			if(isFirstIterate){
+				isFirstIterate = false;
+				i++;
+				return a[first];
+			}
+
+			nextFirst = nextFirst+1;
+			if(nextFirst == capacity()){
+				nextFirst = 0;
+			}
+			i++;
+			return a[nextFirst];
 		}
 	}
 
