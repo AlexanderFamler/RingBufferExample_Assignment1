@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/RingBufferExample_Assignment1.iml" filepath="$PROJECT_DIR$/.idea/RingBufferExample_Assignment1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HttpClientExample_Assignment2/HttpClientExample/assignment01.iml" filepath="$PROJECT_DIR$/HttpClientExample_Assignment2/HttpClientExample/assignment01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RingBufferExample_Assignment1/assignment01 (1).iml" filepath="$PROJECT_DIR$/RingBufferExample_Assignment1/assignment01 (1).iml" />
+    </modules>
+  </component>
+</project>
